@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aplikasi Suara Hewan Tugas 7 JS || Zhafia Rabbani Amalia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  </head>
+  <style>
+    body {
+      background-size: cover;
+      background-attachment: fixed;
+      background-image: url('https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+      font-family: Viga;
+      margin: 1cm 3cm;
+    }
+    .accordion-header,
+    .accordion-item {
+      overflow: hidden;
+      align-items: center;
+      background-color: rgba(23, 230, 227, 0.58);
+    }
+    .accordion-button {
+      font-size: 20px;
+      text-align: center;
+      color: rgb(23, 230, 227);
+      background-color: #191919;
+    }
+    .card-text {
+      color: rgb(241, 52, 19);
+    }
+    .topbar {
+      padding: 2%;
+      margin-bottom: 2%;
+      align-items: center;
+      overflow: hidden;
+      background-color: #191919;
+    }
+    .topten {
+      padding: 2%;
+      margin-bottom: 2%;
+      align-items: center;
+      overflow: hidden;
+      background-color: rgba(230, 161, 23, 0.682);
+    }
+    #p {
+      text-align: center;
+      font-size: 25px;
+      font-family: Viga;
+      color: rgb(23, 230, 227);
+    }
+  </style>
+  <body>
+    <div class="topbar">
+      <p id="p">Aplikasi Suara dan Gambar Hewan</p>
+    </div>
+    <div class="topten">
+    <div class="row mb-4 pt-4">
+    <div class="row justify-content-center">
+      <div class="col text-center">
+          <p class="text-justify">Aplikasi suara dan gambar hewan yang dibangun sesederhana mungkin menggunakan bahasa pemrogramman javascript. 
+            Dalam perancangan aplikasi ini, masih banyak terdapat kekurangan yang harus diperbaiki, design tampilan yang kurang memukau dan penggunaan kata yang kurang sesuai dengan KBBI.</p>
+      </div>
+      <div class="col text-center">
+          <p class="text-justify">Berdasarkan atas kekurangan dalam perancangan aplikasi yang telah disebutkan tersebut, aplikasi ini dibangun untuk mendengarkan suara hewan dan melihat dengan tepat gambar hewan tersebut seperti apa. Aplikasi ini diharapkan dapat mengedukasi
+          anak-anak dan membuat memori ingatan mengenai hewan dan suara hewan tersebut seperti apa.</p>
+          </p>
+      </div>
+      </div>
+    </div>
+    <!-- Isi Content -->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hewan Unggas</button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          
+        <!-- Hewan Unggas -->
+          <div class="accordion-body">
+            <div class="row justify-content-center">
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="kakatua">Burung KakaTua</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Burung KakaTua Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="merak">Burung Merak</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Burung Merak Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="flamingo">Flamingo</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Flamingo Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="gagak">Burung Gagak</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Burung Gagak Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="jangkrik">Jangkrik</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Jangkrik Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="penguin">Penguin</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Penguin Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="angsa">Angsa</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Angsa Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="ayam">Ayam</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Ayam Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Hewan Ternak</button>
+        </h2>
+        
+      <!-- Hewan Ternak -->
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row justify-content-center">
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="sapi">Sapi</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Sapi Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="kambing">Kambing</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Kambing Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="babi">Babi</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Babi Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="kucing">Kucing</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Kucing Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="bebek">Bebek</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Bebek Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="anjing">Anjing</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Anjing Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="hamster">Hamster</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Hamster Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 13rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="kerbau">Kerbau</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Kerbau Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Hewan Buas</button>
+        </h2>
+        
+      <!-- Hewan Buas -->
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row justify-content-center">
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 15rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="rubah">Rubah</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Rubah Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 15rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="singa">Singa</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Singa Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card text-center" style="width: 15rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="gorila">Gorilla</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Gorilla Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 15rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="ular">Ular</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Ular Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 15rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="harimau">Harimau</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Harimau Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card text-center" style="width: 15rem">
+                  <div class="card-body">
+                    <h5 class="card-title" id="beruang">Beruang</h5>
+                    <div class="audio"></div>
+                    <p class="card-text">Ini adalah Beruang Mari Dengarkan Suaranya!!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
