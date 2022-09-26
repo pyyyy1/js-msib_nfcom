@@ -1,0 +1,66 @@
+<script>
+    let pegawai = "Ridwan",
+        jabatan = "Manager",
+        status = "Menikah",
+        tunjangan_jabatan,
+        tunjangan_keluarga,
+        bpjs,
+        gajipokok,
+        total;
+    
+    if(jabatan =="Manager"){
+        gajipokok = 15000000;
+    }
+    else if (jabatan =="asisen Manager"){
+        gajipokok = 10000000;
+    }
+    else if (jabatan == "staff"){
+        gajipokok = 5000000;
+    }
+
+    tunjangan_jabatan = (gajipokok * 15) / 100;
+    bpjs = (gajipokok * 10) / 100;
+    tunjangan_keluarga = status == "Menikah" ? (gajipokok * 20) /100 : 0;
+    total = tunjangan_jabatan + tunjangan_keluarga + gajipokok + bpjs;
+
+    document.write(`
+    <h3 align="center">Data Pegawai</h3><hr>
+    <h4 align="center">
+        Nama Pegawai : ${pegawai} <br>
+        Jabatan : ${jabatan} <br>
+        Status : ${status} <br> 
+    </h4>
+        <table align="center" cellpadding="20" cellspacing="0" border="1" width="50%">
+            <thead>
+                <tr bgcolor="pink">
+                    <th>Data Gaji</th>
+                    <th>Nominal Gaji</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center">Gaji Pokok</td>
+                    <td align="center">${gajipokok}</td>
+                </tr>
+                <tr>
+                    <td align="center">Tunjangan Jabatan</td>
+                    <td align="center">${tunjangan_jabatan}</td>
+                </tr>
+                <tr>
+                    <td align="center">Tunjangan Keluarga</td>
+                    <td align="center">${tunjangan_keluarga}</td>
+                </tr>
+                <tr>
+                    <td align="center">BPJS</td>
+                    <td align="center">${bpjs}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td align="center">Total Gaji</td>
+                    <td align="center">${total}</td>
+                </tr>
+            </tfoot>
+        </table>
+        `)
+</script>
